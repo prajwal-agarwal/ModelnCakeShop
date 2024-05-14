@@ -1,0 +1,25 @@
+import { useState } from "react";
+
+function Attendance() {
+
+    var user={};
+    var [people, setPeople] = useState([{
+        name:"Prajwal Agarwal"
+    }]);
+    function handleName(e) {
+        user.name = e.target.value
+    }
+
+    function markAttendance(){
+
+        people.push(user);
+        console.log("people present are: ", people);
+        setPeople(people);
+    }
+
+    return (
+        <>
+
+        </>
+    )
+}
